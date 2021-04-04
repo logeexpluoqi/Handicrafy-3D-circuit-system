@@ -7,16 +7,16 @@
 #ifndef _TASK_H
 #define _TASK_H
 
-#define NULL (void*)0
-	
-#define TASK_NUM  11
-	
+#define NULL (void *)0
+
+#define TASK_NUM 11
+
 typedef struct TASK_COMPONENTS
 {
 	unsigned char TaskIsRunFlag;
-	unsigned int  TaskTimer;
-	unsigned int  TaskIntervalTime;
-	void (*TaskHook)(void* param);
+	unsigned int TaskTimer;
+	unsigned int TaskIntervalTime;
+	void (*TaskHook)(void *param);
 } TaskInitTypeDef;
 
 void task_init(void);
@@ -34,7 +34,5 @@ void task_500ms(void);
 void task_1s(void);
 void task_5s(void);
 void task_10s(void);
-
-
 
 #endif

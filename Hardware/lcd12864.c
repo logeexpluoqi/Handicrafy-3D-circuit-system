@@ -73,13 +73,9 @@ void lcd_check_busy()
 void lcd_bk_off_on(LcdBk state)
 {
     if (state == LCD_ON)
-    {
         lcd_bk = 0;
-    }
     else
-    {
         lcd_bk = 1;
-    }
 }
 
 unsigned char lcd_read_data()

@@ -7,4 +7,3 @@ void jk_off_on(JK_State state)
 {
     JK = state;
 }
-

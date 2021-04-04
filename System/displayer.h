@@ -12,13 +12,12 @@ typedef struct DISPLAYER
 {
     unsigned char IsRefresh;
     unsigned char DisplayLayer1[800];
-    
+
 } Display;
 
 void displayer_init(void);
 void displayer_show(void);
 void displayer_close(void);
 void displayer_clear(void);
-
 
 #endif

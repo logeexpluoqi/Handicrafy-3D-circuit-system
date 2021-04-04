@@ -10,10 +10,8 @@
 sbit beep = P0^0;
 void bee(BeepState state)
 {
-    if(state)
+    if (state)
         beep = 0;
     else
-        beep = 1;  
+        beep = 1;
 }
-
-

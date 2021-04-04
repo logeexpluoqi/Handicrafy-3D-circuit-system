@@ -31,7 +31,7 @@ void displayer_show()
     {
         
 
-
+        
         displayer.IsRefresh = 0;
     }
 }

@@ -15,5 +15,4 @@ void graphic_draw_rectangle(uint x1, uint y1, uint x2, uint y2);
 void graphic_draw_triangle(uint x1, uint y1, uint x2, uint y2, uint x3, uint y3);
 void graphic_draw_circle(uint center_x, uint center_y, uint r);
 
-
 #endif
