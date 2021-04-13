@@ -2,7 +2,7 @@
  * @Author: luoqi 
  * @Date: 2019-12-24 22:38:24 
  * @Last Modified by: luoqi
- * @Last Modified time: 2020-03-14 22:47:34
+ * @Last Modified time: 2021-04-13 15:43:37
  */
 #include "lcd12864.h"
 #include "delay.h"
@@ -16,17 +16,12 @@ void lcd_init()
 
 }
 
-void lcd_bk_off_on(LcdBk state)
+void lcd_bk_off_on(State state)
 {
     lcd_bk = state;
 }
 
 void lcd_set_dot(unsigned char x, unsigned char y)
-{
-
-}
-
-void lcd_set_graph(unsigned char graph[16][64])
 {
 
 }

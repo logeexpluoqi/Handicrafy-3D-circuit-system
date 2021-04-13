@@ -3,7 +3,7 @@
 
 sbit JK = P0^6;
 
-void jk_off_on(JK_State state)
+void jk_off_on(State state)
 {
     JK = state;
 }

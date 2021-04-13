@@ -16,7 +16,7 @@ void displayer_init()
     
     lcd_init();
     displayer_clear();
-	lcd_bk_off_on(LCD_ON);
+	lcd_bk_off_on(ON);
 
     displayer.IsRefresh = 0;
     for(i = 0; i < 10; i++)

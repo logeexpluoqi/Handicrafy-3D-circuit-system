@@ -2,9 +2,10 @@
  * @Author: luoqi 
  * @Date: 2019-12-24 22:38:30 
  * @Last Modified by: luoqi
- * @Last Modified time: 2020-10-15 01:20:07
+ * @Last Modified time: 2021-04-13 15:44:44
  */
 #include "task.h"
+#include "common.h"
 #include "beep.h"
 #include "displayer.h"
 #include "ds18b20.h"
@@ -94,7 +95,7 @@ void task_200ms()
 
 void task_500ms()
 {
-	
+
 }
 
 void task_1s()
@@ -106,9 +107,9 @@ void task_5s()
 	static unsigned char state = 0;
 	state = ~state;
 	if (state)
-		jk_off_on(JK_ON);
+		jk_off_on(ON);
 	else
-		jk_off_on(JK_OFF);
+		jk_off_on(OFF);
 }
 
 void task_10s()
