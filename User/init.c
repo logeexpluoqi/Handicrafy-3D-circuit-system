@@ -17,12 +17,12 @@
 void sys_init()
 {
 	P0M0 = 0xff;
-	P0M1 = 0x00;
+	P0M1 = 0x00; 
 	displayer_init();
 	task_init();
 	bee(BEEP_ON);
 	delay_ms(500);
 	bee(BEEP_OFF);
 	jk_off_on(JK_OFF);
-	lcd_bk_off_on(LCD_OFF);
+	// lcd_bk_off_on(LCD_OFF);
 }
