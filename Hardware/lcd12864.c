@@ -2,7 +2,7 @@
  * @Author: luoqi 
  * @Date: 2019-12-24 22:38:24 
  * @Last Modified by: luoqi
- * @Last Modified time: 2021-04-13 15:43:37
+ * @Last Modified time: 2021-04-13 15:55:22
  */
 #include "lcd12864.h"
 #include "delay.h"

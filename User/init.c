@@ -2,14 +2,13 @@
  * @Author: luoqi 
  * @Date: 2019-12-24 22:38:38 
  * @Last Modified by: luoqi
- * @Last Modified time: 2021-04-13 15:48:23
+ * @Last Modified time: 2021-04-13 16:07:27
  */
 #include "init.h"
 #include "beep.h"
 #include "delay.h"
 #include "displayer.h"
 #include "ds18b20.h"
-#include "lcd12864.h"
 #include "relay.h"
 #include "stc12c5a60s2.h"
 #include "task.h"
@@ -24,5 +23,5 @@ void sys_init()
 	delay_ms(500);
 	bee(BEEP_OFF);
 	jk_off_on(OFF);
-	// lcd_bk_off_on(LCD_OFF);
+	displayer_open();
 }

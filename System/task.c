@@ -2,7 +2,7 @@
  * @Author: luoqi 
  * @Date: 2019-12-24 22:38:30 
  * @Last Modified by: luoqi
- * @Last Modified time: 2021-04-13 15:44:44
+ * @Last Modified time: 2021-04-13 16:07:09
  */
 #include "task.h"
 #include "common.h"
@@ -10,7 +10,6 @@
 #include "displayer.h"
 #include "ds18b20.h"
 #include "key.h"
-#include "lcd12864.h"
 #include "relay.h"
 #include "stc12c5a60s2.h"
 #include "timer.h"
