@@ -7,9 +7,10 @@
 #include "key.h"
 #include "stc12c5a60s2.h"
 
-KEY_Value key_scan()
+KeyObj key_obj;
+
+void key_scan()
 {
-    unsigned char keyVal;
     static unsigned char scanState = 0;
 
     if (key_0 == 0 | key_1 == 0 | key_2 == 0 | key_3 == 0)
@@ -19,19 +20,17 @@ KEY_Value key_scan()
     if (scanState == 1)
     {
         if (key_0 == 0)
-            keyVal = KEY0;
+            key_obj.key_val |= KEY0;
         else if (key_1 == 0)
-            keyVal = KEY1;
+            key_obj.key_val |= KEY1;
         else if (key_2 == 0)
-            keyVal = KEY2;
+            key_obj.key_val |= KEY2;
         else if (key_3 == 0)
-            keyVal = KEY3;
+            key_obj.key_val |= KEY3;
         else
-            keyVal = KEYNULL;
+            key_obj.key_val = KEYNULL;
         scanState = 0;
     }
     else
-        keyVal = KEYNULL;
-
-    return keyVal;
+        key_obj.key_val = KEYNULL;
 }

@@ -14,8 +14,6 @@
 #include "stc12c5a60s2.h"
 #include "timer.h"
 
-KEY_Value keyVal;
-
 TaskInitTypeDef Tasks[TASK_NUM] =
 	{
 		{0, 10, 10, task_10ms},
@@ -76,7 +74,7 @@ void task_10ms()
 
 void task_20ms()
 {
-	keyVal = key_scan();
+	key_scan();
 }
 
 void task_50ms()

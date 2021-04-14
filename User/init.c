@@ -17,6 +17,8 @@ void sys_init()
 {
 	P0M0 = 0xff;
 	P0M1 = 0x00; 
+	P0 = 0x81;
+    P2 = 0xff;
 	displayer_init();
 	task_init();
 	bee(BEEP_ON);
