@@ -14,8 +14,6 @@
 #include "stc12c5a60s2.h"
 #include "task.h"
 
-extern KeyObj key_obj;
-
 void main()
 {
     sys_init();
@@ -23,7 +21,7 @@ void main()
     while(1)
     {
         task_process();
-        if (key_obj.key_val != 0x00)
+        if (key_get_state() == 0x01)
             bee(BEEP_ON);
         else
             bee(BEEP_OFF);

@@ -22,11 +22,7 @@ enum KEY_VALUE
     KEY3    = 0x08
 } ;
 
-typedef struct key_obj
-{
-    unsigned char key_val;
-} KeyObj;
-
 void key_scan(void);
+unsigned char key_get_state(void);
 
 #endif
