@@ -7,6 +7,6 @@
 #ifndef _DS18B20_H
 #define _DS18B20_H
 
-
+float ds18b20_get_temperature(void);
 
 #endif

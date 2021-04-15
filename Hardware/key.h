@@ -6,12 +6,6 @@
  */
 #ifndef _KEY_H
 #define _KEY_H
-#include "stc12c5a60s2.h"
-
-sbit key_0 = P3^2;
-sbit key_1 = P3^3;
-sbit key_2 = P3^4;
-sbit key_3 = P3^5;
 
 enum KEY_VALUE
 {

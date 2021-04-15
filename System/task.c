@@ -25,8 +25,9 @@ TaskInitTypeDef Tasks[TASK_NUM] =
 		{0, 500, 500, task_500ms},
 		{0, 1000, 1000, task_1s},
 		{0, 5000, 5000, task_5s},
-		{0, 10000, 10000, task_10s}};
-
+		{0, 10000, 10000, task_10s}
+	};
+ 
 void task_init()
 {
 	timer0_init();

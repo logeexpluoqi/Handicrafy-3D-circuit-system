@@ -9,6 +9,11 @@
 
 static unsigned char key_state;
 
+sbit key_0 = P3^2;
+sbit key_1 = P3^3;
+sbit key_2 = P3^4;
+sbit key_3 = P3^5;
+
 void key_scan()
 {
     static unsigned char scanState = 0;
@@ -21,7 +26,7 @@ void key_scan()
     {
         if (key_0 == 0)
             key_state |= KEY0;
-        else if (key_1 == 0)
+         else if (key_1 == 0)
             key_state |= KEY1;
         else if (key_2 == 0)
             key_state |= KEY2;
