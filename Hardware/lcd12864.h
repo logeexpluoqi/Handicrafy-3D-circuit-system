@@ -16,30 +16,18 @@ sbit lcd_sda_out    = P0^4; // R/W, serial model data
 sbit lcd_sda_in     = P0^4; // read sda data
 sbit lcd_cs         = P0^3; // RS, serial model chip select, "1" is active
 
-#define LCD_WRITE_CMD            0xf8
-#define LCD_WRITE_DATA           0xfa
-#define LCD_READ_STATE           0xfc
-#define LCD_READ_DATA            0xfe   
-
-#define LCD_DISP_CLR             0x01
-#define LCD_RETURN_HOME          0x02
-#define LCD_ENTRY_MODE           0x04
-#define LCD_DISP_CTRL            0x08
-#define LCD_DISP_CURSOR          0x10
-#define LCD_FUNCTION_SET         0x20
-#define LCD_CGRAM_ADDR           0x40
-#define LCD_DDRAM_ADDR           0x80
-
-#define LCD_STANDBY_MODE         0x01
-#define LCD_SCROLL_CGRAM_ADDR    0x02
-#define LCD_REVERSE              0x04
-#define LCD_EXTENDED_FUNCTION    0x20
-#define LCD_SCROLL_ADDR          0x40
-#define LCD_GDRAM_ADDR           0x80
+#define LCD_CLEAR               0x01
+#define LCD_HOME                0x02
+#define LCD_DISPLAY_OFF         0x08 
+#define LCD_DISPLAY_ON          0x0c
+#define LCD_CURSOR_OFF          0x08
+#define LCD_CURSOR_ON           0x0a
+#define LCD_BLINK_OFF           0x08
+#define LCD_BLINK_ON            0x09
 
 typedef enum
 {
-    LCD_REG,
+    LCD_INST,
     LCD_DATA
 } LcdWType;
 

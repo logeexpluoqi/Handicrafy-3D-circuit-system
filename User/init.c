@@ -19,11 +19,10 @@ void sys_init()
 	P0M1 = 0x00; 
 	P0 = 0x81;
     P2 = 0xff;
-	displayer_init();
 	task_init();
+	displayer_init();
 	bee(BEEP_ON);
 	delay_ms(500);
 	bee(BEEP_OFF);
 	jk_off_on(OFF);
-	displayer_open();
 }

@@ -10,7 +10,7 @@
 
 void graphic_init()
 {
-    
+    lcd_init();
 }
 
 void graphic_clear()

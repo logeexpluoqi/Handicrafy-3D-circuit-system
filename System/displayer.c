@@ -9,7 +9,7 @@
 
 void displayer_init()
 {
-
+    graphic_init();
 }
 
 void displayer_show()
