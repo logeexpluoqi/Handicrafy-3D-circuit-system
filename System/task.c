@@ -5,14 +5,14 @@
  * @Last Modified time: 2021-04-13 16:07:09
  */
 #include "task.h"
-#include "common.h"
-#include "beep.h"
-#include "displayer.h"
-#include "ds18b20.h"
-#include "key.h"
-#include "relay.h"
-#include "stc12c5a60s2.h"
-#include "timer.h"
+#include "../User/common.h"
+#include "../Hardware/beep.h"
+#include "../System/displayer.h"
+#include "../Hardware/ds18b20.h"
+#include "../Hardware/key.h"
+#include "../Hardware/relay.h"
+#include "../Firmware/stc12c5a60s2.h"
+#include "../System/timer.h"
 
 TaskInitTypeDef Tasks[TASK_NUM] =
 	{

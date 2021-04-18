@@ -5,7 +5,7 @@
  * @Last Modified time: 2021-04-13 16:06:25
  */
 #include "graphic.h"
-#include "lcd12864.h"
+#include "../Hardware/lcd12864.h"
 #include "fonts.h"
 
 void graphic_init()

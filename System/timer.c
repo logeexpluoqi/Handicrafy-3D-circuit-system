@@ -5,9 +5,9 @@
  * @Last Modified time: 2019-12-24 22:41:22 
  */
 #include "timer.h"
-#include "beep.h"
-#include "relay.h"
-#include "stc12c5a60s2.h"
+#include "../Hardware/beep.h"
+#include "../Hardware/relay.h"
+#include "../Firmware/stc12c5a60s2.h"
 #include "task.h"
 
 extern unsigned int delay_ms_cnt;

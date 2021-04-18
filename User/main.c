@@ -6,12 +6,8 @@
  */
 
 #include "init.h"
-#include "beep.h"
-#include "delay.h"
 #include "key.h"
-#include "lcd12864.h"
-#include "relay.h"
-#include "stc12c5a60s2.h"
+#include "beep.h"
 #include "task.h"
 
 void main()

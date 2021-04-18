@@ -37,6 +37,12 @@ sbit lcd_cs         = P0^3; // RS, serial model chip select, "1" is active
 #define LCD_SCROLL_ADDR          0x40
 #define LCD_GDRAM_ADDR           0x80
 
+typedef enum
+{
+    LCD_REG,
+    LCD_DATA
+} LcdWType;
+
 void lcd_init(void);
 void lcd_bk_off_on(State state);
 void lcd_set_dot(unsigned char x, unsigned char y);
