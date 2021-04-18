@@ -6,9 +6,9 @@
  */
 
 #include "init.h"
-#include "key.h"
-#include "beep.h"
-#include "task.h"
+#include "../Hardware/key.h"
+#include "../Hardware/beep.h"
+#include "../System/task.h"
 
 void main()
 {
