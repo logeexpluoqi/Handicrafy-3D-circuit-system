@@ -41,7 +41,7 @@ void lcd_write_byte(LcdWType type, unsigned char wdata)
 
     for(i = 1; i <= 24; i++)
     {
-        delay_us(1);
+        delay_us(10);
         lcd_clk = 0;
 
         if(i <= 5)

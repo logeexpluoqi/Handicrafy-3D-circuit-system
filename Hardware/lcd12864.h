@@ -1,3 +1,4 @@
+
 /*
  * @Author: luoqi 
  * @Date: 2019-12-24 22:38:20 
@@ -7,7 +8,7 @@
 #ifndef _LCD12864_H
 #define _LCD12864_H
 
-#include "stc12c5a60s2.h"
+#include "../Firmware/stc12c5a60s2.h"
 #include "common.h"
 
 sbit lcd_bk         = P2^0; // background light
